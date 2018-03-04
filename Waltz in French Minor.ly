@@ -5,44 +5,41 @@
 }
 
 upper = \relative c''' {
-	\tempo 8 = 95
 	\clef treble
 	\key aes \major
 	\time 3/4
-	aes8 ees c aes c16 ees r8 |
-	ees c aes ees aes16 c aes8\noBeam |
-	a16 bes b c des d ees e f ges  g aes |
-	<aes c, ees aes,>4 <ees, aes c>2 |
-	r2 r4 | aes16 g f a c ees ees, des c e g bes |
-	bes8 ees16 des bes8 c f16 ees c8 |
-	des16 aes g f8. aes16 f8 g16 des8 |
-	aes'16 c,8 des16 <ees aes>8 c'16 g aes f bes c, |
-	\key des \major
-	ees16 f aes bes ees g f8 c aes16 f |
-	des'16 d bes des <bes ges'>8 ees16 e c e <c aes'>8 |
-	<des des,>4. des16 aes f <des des'>8. |
-	des''8 aes f des f16 aes r8 |
-	aes8 f des aes des16 f des8 |
-	d16 ees e f ges g aes a bes b c des |
-	<des, f aes des>4 <f, aes des f> <ees aes c ees>8 <f bes des f> |
+	\tempo 4 = 100
+	aes4 ees c | aes c8 ees r4 |
+	ees c aes | ees aes8 c aes4 |
+	a8 bes b c des d | ees e f ges g aes |
+	<aes c, ees aes,>2 <ees, aes c>4~ | <ees aes c>4 r2 |
+	r2 r4 | r2 r4 | aes8 g f a c ees | ees, des c e g bes |
+	bes4 ees8 des bes4 | c f8 ees c4 |
+	des8 aes g f4. | aes8 f4 g8 des4 |
+	aes'8 c,4 des8 <ees aes>4 | c'8 g aes f bes c, |
+	ees8 f aes bes ees g | f4 c aes8 f |
+	des'8 d bes des <bes ges'>4 | ees8 e c e <c aes'>4 |
+	<des des,>2. | des8 aes f <des des'>4. |
+	des''4 aes f | des f8 aes r4 |
+	aes4 f des | aes des8 f des4 |
+	d8 ees e f ges g | aes a bes b c des |
+	<des, f aes des>2 <f, aes des f>4~ | <f aes des f>4 <ees aes c ees> <f bes des f> |
 }
 
 lower = \relative c {
-	\tempo 8 = 95
 	\clef bass
 	\key aes \major
 	\time 3/4
-	r2 r4 | r2 r4 | r2 r4 | r4 r2 |
-	aes8\noBeam <c ees> <c ees> aes\noBeam <c ees> <c ees> |
-	aes\noBeam <c ees> <c ees> aes\noBeam <c ees> <c ees> |
-	bes\noBeam <des f> <des f,> bes\noBeam <f des'>16 bes des8 |
-	des8\noBeam <aes f'> <aes f'> des\noBeam <aes' f> <aes f> |
-	aes\noBeam <c, ees> <c ees> ees,\noBeam <c' ees> <c ees> |
-	\key des \major
-	bes\noBeam <ees g> <ees g,> aes\noBeam <c, f> <aes c> |
-	bes\noBeam <ges des'>16 bes ges8 c\noBeam <aes ees'>16 c <aes ees'>8 |
-	<aes des> <aes f'> <des f> aes16 des f des f aes | <aes, des f aes>4 r2 |
-	r2 r4 | r2 r4 | <f des'>4 <aes aes'> <c c'>8 <des des'>8 | 
+	r2 r4 |r2 r4 | r2 r4 | r2 r4 | r2 r4 | r2 r4 | r2 r4 | r4 r2 |
+	aes4 <c ees> <c ees> | aes <c ees> <c ees> |
+	aes <c ees> <c ees> | aes <c ees> <c ees> |
+	bes <des f> <des f,> | bes <f des'>8 bes des4 |
+	des4 <aes f'> <aes f'> | des <aes' f> <aes f> |
+	aes <c, ees> <c ees> | ees, <c' ees> <c ees> |
+	bes <ees g> <ees g,> | aes <c, f> <aes c> |
+	bes <ges des'>8 bes ges4 | c <aes ees'>8 c <aes ees'>4 |
+	<aes des> <aes f'> <des f> | aes8 des f des f aes | <aes, des f aes>4 r2 |
+	r2 r4 | r2 r4 | r2 r4 | r2 r4 | r2 r4 | <f des'>2 <aes aes'>4~ | <aes aes'>4 <c c'> <des des'> | 
 }
 \score {
 	<<
