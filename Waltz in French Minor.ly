@@ -17,7 +17,7 @@ upper = \relative c''' {
 	bes4 ees8 des bes4 | c f8 ees c4 |
 	des8 aes g f4. | aes8 f4 g8 des4 |
 	aes'8 c,4 des8 <ees aes>4 | c'8 g aes f bes c, |
-	ees8 f aes bes ees g | f4 c aes8 f |
+	ees8 f aes bes ees ges | f4 des aes8 f |
 	des'8 d bes des <bes ges'>4 | ees8 e c e <c aes'>4 |
 	<des des,>2. | des8 aes f <des des'>4. |
 	des''4 aes f | des f8 aes r4 |
@@ -36,7 +36,7 @@ lower = \relative c {
 	bes <des f> <des f,> | bes <f des'>8 bes des4 |
 	des4 <aes f'> <aes f'> | des <aes' f> <aes f> |
 	aes <c, ees> <c ees> | ees, <c' ees> <c ees> |
-	bes <ees g> <ees g,> | aes <c, f> <aes c> |
+	aes <c ees> <c ges'> | f <aes, f'> <aes des> |
 	bes <ges des'>8 bes ges4 | c <aes ees'>8 c <aes ees'>4 |
 	<aes des> <aes f'> <des f> | aes8 des f des f aes | <aes, des f aes>4 r2 |
 	r2 r4 | r2 r4 | r2 r4 | r2 r4 | r2 r4 | <f des'>2 <aes aes'>4~ | <aes aes'>4 <c c'> <des des'> | 
