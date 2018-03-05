@@ -18,7 +18,7 @@ upper = \relative c''' {
 	des8 aes g f4. | aes8 f4 g8 des4 |
 	aes'8 c,4 des8 <ees aes>4 | c'8 g aes f bes c, |
 	ees8 f aes bes ees ges | f4 des aes8 f |
-	des'8 d bes des <bes ges'>4 | ees8 e c e <c aes'>4 |
+	des'8 d bes des <bes ges'>4 | ees8 e c ees <c aes'>4 |
 	<des des,>2. | des8 aes f <des des'>4. |
 	des''4 aes f | des f8 aes r4 |
 	aes4 f des | aes des8 f des4 |
@@ -42,6 +42,7 @@ lower = \relative c {
 	r2 r4 | r2 r4 | r2 r4 | r2 r4 | r2 r4 | <f des'>2 <aes aes'>4~ | <aes aes'>4 <c c'> <des des'> | 
 }
 \score {
+	\new PianoStaff \with { instrumentName = #"Piano" }
 	<<
 		\new Staff = "upper" \upper
 		\new Staff = "lower" \lower
