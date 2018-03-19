@@ -8,7 +8,7 @@ upper = \relative c''' {
 	\clef treble
 	\key aes \major
 	\time 3/4
-	\tempo 4 = 100
+	\tempo 4 = 120
 	aes4 ees c | aes c8 ees r4 |
 	ees c aes | ees aes8 c aes4 |
 	a8 bes b c des d | ees e f ges g aes |
@@ -23,7 +23,9 @@ upper = \relative c''' {
 	des''4 aes f | des f8 aes r4 |
 	aes4 f des | aes des8 f des4 |
 	d8 ees e f ges g | aes a bes b c des |
-	<des, f aes des>2 <f, aes des f>4~ | <f aes des f>4 <ees aes c ees> <f bes des f> |
+	<des, f aes des>2 <f, aes des f>4~ | <f aes des f>4 <ees aes c ees>-. <f bes des f>->~ |
+	<f bes des f>2. | <ees c'>2 des'8 des~ | des c des ees e <bes f'>~ | <bes f'>2. |
+	r2.\fermata | r2. | r2. | r2. | r2. |
 }
 
 lower = \relative c {
@@ -39,7 +41,9 @@ lower = \relative c {
 	aes <c ees> <c ges'> | f <aes, f'> <aes des> |
 	bes <ges des'>8 bes ges4 | c <aes ees'>8 c <aes ees'>4 |
 	<aes des> <aes f'> <des f> | aes8 des f des f aes | <aes, des f aes>4 r2 |
-	r2 r4 | r2 r4 | r2 r4 | r2 r4 | r2 r4 | <f des'>2 <aes aes'>4~ | <aes aes'>4 <c c'> <des des'> | 
+	r2 r4 | r2 r4 | r2 r4 | r2 r4 | r2 r4 | <f des'>2 <aes aes'>4~ | <aes aes'>4 <c c'>-. <des des'>->~ |
+	<des des'>2. | <c c'>2 r8 des8~ | des <aes f'>4. f'8 <g, des'>~ | <g des'>2. |
+	r2.\ppp\< | f4 <aes c> <aes c> | c, <aes' c> <aes c> | f <aes c> <aes c> | c, <aes' c> <aes c>\mf |
 }
 \score {
 	\new PianoStaff \with { instrumentName = #"Piano" }
