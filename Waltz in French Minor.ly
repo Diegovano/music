@@ -17,7 +17,7 @@ upper = \relative c''' {
 	bes4 ees8 des bes4 | c f8 ees c4 |
 	des8 aes g f4. | aes8 f4 g8 des4 |
 	aes'8 c,4 des8 <ees aes>4 | c'8 g aes f bes c, |
-	ees8 f aes bes ees ges | f4 des aes8 f |
+	ees8 f aes c ees ges | f4 des aes8 f |
 	des'8 d bes des <bes ges'>4 | ees8 e c ees <c aes'>4 |
 	<des des,>2. | des8 aes f <des des'>4. |
 	des''4 aes f | des f8 aes r4 |
@@ -25,7 +25,7 @@ upper = \relative c''' {
 	d8 ees e f ges g | aes a bes b c des |
 	<des, f aes des>2 <f, aes des f>4~ | <f aes des f>4 <ees aes c ees>-. <f bes des f>->~ |
 	<f bes des f>2. | <ees c'>2 des'8 des~ | des c des ees e <bes f'>~ | <bes f'>2. |
-	r2.\fermata | r2. | r2. | r2. | r2. |
+	r2.\fermata | r2. | r2. | r2. | r2. | f'2. | c2 bes8 aes | f2. |
 }
 
 lower = \relative c {
@@ -44,13 +44,18 @@ lower = \relative c {
 	r2 r4 | r2 r4 | r2 r4 | r2 r4 | r2 r4 | <f des'>2 <aes aes'>4~ | <aes aes'>4 <c c'>-. <des des'>->~ |
 	<des des'>2. | <c c'>2 r8 des8~ | des <aes f'>4. f'8 <g, des'>~ | <g des'>2. |
 	r2.\ppp\< | f4 <aes c> <aes c> | c, <aes' c> <aes c> | f <aes c> <aes c> | c, <aes' c> <aes c>\mf |
+	f <aes c> <aes c> | c, <aes' c> <aes c> | f <aes c> <aes c> |
 }
+
 \score {
-	\new PianoStaff \with { instrumentName = #"Piano" }
+	\new PianoStaff \with {
+	instrumentName = #"Piano"
+	}
 	<<
 		\new Staff = "upper" \upper
 		\new Staff = "lower" \lower
 	>>
-	\layout { }
+	\layout {
+	}
 	\midi { }
 }
