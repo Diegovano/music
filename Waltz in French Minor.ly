@@ -1,7 +1,8 @@
 \version "2.18.2"
 \header {
 	title = "Waltz in French Minor"
-	tagline = "For Nathalie Lescastereyres"
+	subtitle = "For Nathalie Lescastereyres"
+	tagline = ""
 }
 
 upper = \relative c''' {
@@ -26,7 +27,7 @@ upper = \relative c''' {
 	<des, f aes des>2 <f, aes des f>4~ | <f aes des f>4 <ees aes c ees>-. <f bes des f>->~ |
 	<f bes des f>2. | <ees c'>2 des'8 des~ | des c des ees e <bes f'>~ | <bes f'>2. |
 	r2.\fermata | r2. | r2. | r2. | r2. | f'2. | c2 bes8 aes | f2. |
-	f4 aes8 bes c16 des bes c | r8 c des c aes eis' | r c des c f g, | r g eis'4 des16 c aes eis | r8 f16 aes c eis des aes f8 bes |
+	f4 aes8 bes c16 des bes c | r8 c des c aes eis' | r c des c f g, | r g eis'4 des8 c | r g eis4 c'8 r | r f,16 aes c eis des aes f8 bes |
 }
 
 lower = \relative c {
@@ -47,7 +48,7 @@ lower = \relative c {
 	r2.\ppp\< | f4 <aes c> <aes c> | c, <aes' c> <aes c> | f <aes c> <aes c> | c, <aes' c> <aes c>\mf |
 	f <aes c> <aes c> | c, <aes' c> <aes c> | f <aes c> <aes c> |
 	c, <aes' c> <aes c> | f <aes c> <aes c> | bes <des f bes> <des f bes> | g, <bes eis> <bes eis g> |
-	des <aes' c> <aes c> |
+	c <eis bes' c> <c eis bes' c> | des <aes' c> <aes c> |
 }
 
 \score {
