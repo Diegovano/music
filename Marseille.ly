@@ -10,8 +10,10 @@ upper = \relative c' {
 	\key c \minor
 	c8 ees g 16ees r8 g4 ees | c8 ees g 16ees r8 g4 ees |
 	c16 c g'8 f d g r8 c4| c8 ees f16 d c d r8 c8 ees4 |
-	b4 g2 c4 | c8 g g4 b8 d d4 | c4. e4 d16 c4 r16 |
-	
+	b4 g2 c4 | c8 g g4 b8 d d4 | c4. e4 e16 d4 r16 | 
+	c4 c,8 c16 e32 g <c, e g>8 r8 <c ees g>8 bes16 <c g> |
+	<c g>8 <c g>4 a8 bes4 d8 g |
+	c,8 ees g16 ees r8 g4 ees | c8 ees g16 ees r8 g4 ees |
 }
 
 lower = \relative c {
