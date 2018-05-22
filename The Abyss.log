@@ -7,16 +7,19 @@ C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:18:1: error: unknown escaped string
 C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:26:1: error: unknown escaped string: `\pianoUpper'
 
 \pianoUpper = \relative c''
-C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:34:1: error: unknown escaped string: `\pianoLower'
+C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:35:1: error: unknown escaped string: `\pianoLower'
 
 \pianoLower = \relative c
-C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:42:1: error: unknown escaped string: `\celloMusic'
+C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:44:1: error: unknown escaped string: `\celloMusic'
 
 \celloMusic = \relative c
-C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:70:9: error: syntax error, unexpected \layout
-	
-        \layout { }
-C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:52:1: error: errors found, ignoring music expression
-
-\unfoldRepeats \articulate <<
+Interpreting music...[8]
+Preprocessing graphical objects...
+Interpreting music...
+MIDI output to `/Users/Diego/Desktop/LilyPond/The Abyss.mid'...
+Finding the ideal number of pages...
+Fitting music on 1 page...
+Drawing systems...
+Layout output to `/Users/Diego/Desktop/LilyPond/The Abyss.ps'...
+Converting to `/Users/Diego/Desktop/LilyPond/The Abyss.pdf'...
 fatal error: failed files: "C:\\Users\\Diego\\Desktop\\LilyPond\\The Abyss.ly"
