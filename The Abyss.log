@@ -1,19 +1,19 @@
 # -*-compilation-*-
 Processing `C:/Users/Diego/Desktop/LilyPond/The Abyss.ly'
 Parsing...
-C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:18:1: error: unknown escaped string: `\trumpetMusic'
+C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:22:1: error: unknown escaped string: `\trumpetMusic'
 
 \trumpetMusic = \relative c''
-C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:26:1: error: unknown escaped string: `\pianoUpper'
+C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:31:1: error: unknown escaped string: `\pianoUpper'
 
 \pianoUpper = \relative c''
-C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:35:1: error: unknown escaped string: `\pianoLower'
+C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:41:1: error: unknown escaped string: `\pianoLower'
 
 \pianoLower = \relative c
-C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:44:1: error: unknown escaped string: `\celloMusic'
+C:/Users/Diego/Desktop/LilyPond/The Abyss.ly:52:1: error: unknown escaped string: `\celloMusic'
 
 \celloMusic = \relative c
-Interpreting music...[8]
+Interpreting music...[8][16][24][24]
 Preprocessing graphical objects...
 Interpreting music...
 MIDI output to `/Users/Diego/Desktop/LilyPond/The Abyss.mid'...
