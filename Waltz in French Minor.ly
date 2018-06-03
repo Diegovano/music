@@ -27,7 +27,10 @@ upper = \relative c''' {
 	<des, f aes des>2 <f, aes des f>4~ | <f aes des f>4 <ees aes c ees>-. <f bes des f>->~ |
 	<f bes des f>2. | <ees c'>2 des'8 des~ | des c des ees e <bes f'>~ | <bes f'>2. |
 	r2.\fermata | r2. | r2. | r2. | r2. | f'2. | c2 bes8 aes | f2. |
-	f4 aes8 bes c16 des bes c | r8 c des c aes eis' | r c des c f g, | r g eis'4 des8 c | r g eis4 c'8 r | r f,16 aes c eis des aes f8 bes |
+	f4 aes8 bes c16 des bes c | r8 c des c aes eis' | r c des c f g, | r g eis'4 des8 c |
+	r g eis4 c'8 r | r f,16 aes c eis des aes f8 bes | r g16 bes des f ees bes g8 c | r aes16 c ees g f c aes8 c |
+	r8 ees16 des c8 g16 ees f4~ | f4 r2 | \ottava #1 r2 <f' f'>4 | <f f'> r2 | <f f'>4 <f f'>4 r4 \ottava #0 | r2. |
+	
 }
 
 lower = \relative c {
@@ -48,7 +51,8 @@ lower = \relative c {
 	r2.\ppp\< | f4 <aes c> <aes c> | c, <aes' c> <aes c> | f <aes c> <aes c> | c, <aes' c> <aes c>\mf |
 	f <aes c> <aes c> | c, <aes' c> <aes c> | f <aes c> <aes c> |
 	c, <aes' c> <aes c> | f <aes c> <aes c> | bes <des f bes> <des f bes> | g, <bes eis> <bes eis g> |
-	c <eis bes' c> <c eis bes' c> | des <aes' c> <aes c> |
+	c <eis bes' c> <c eis bes' c> | des <aes' c> <aes c> | des, <g bes> <g bes> | ees <aes c> <aes c> |
+	ees <g c,> <f c> | r2. | <f,, f'>2 r4 | r4 <f f'>4 <f f'> | r2 <f f'>4~ | <f f'>2. |
 }
 
 \score {
