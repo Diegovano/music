@@ -56,6 +56,7 @@ lower = \relative c {
 	instrumentName = #"Piano"
 	}
 	<<
+		\set Score.proportionalNotationDuration = #(ly:make-moment 1/10)
 		\new Staff = "upper" \upper
 		\new Staff = "lower" \lower
 	>>

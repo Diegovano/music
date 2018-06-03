@@ -19,7 +19,7 @@ fluteMusic = \relative c''
 	bes8 bes ges f4 ees8 | ees4~ ees16 c8. bes'4 |
 }
 
-\trumpetMusic = \relative c''
+trumpetMusic = \relative c''
 {
 	\clef treble
 	\key bes \major
@@ -28,7 +28,7 @@ fluteMusic = \relative c''
 	r2. | r2. | r2. | r2. | r2. | r2. | r2. | r2. | r2. | r2. |
 }
 
-\pianoUpper = \relative c''
+pianoUpper = \relative c''
 {
 	\clef treble
 	\key bes \major
@@ -38,7 +38,7 @@ fluteMusic = \relative c''
 	r2. | r2. | r2. | r2. | des'4( ees8 <c ees>4 c8) | r2. |
 }
 
-\pianoLower = \relative c
+pianoLower = \relative c
 {
 	\clef bass
 	\key bes \major
@@ -49,7 +49,7 @@ fluteMusic = \relative c''
 	<bes ees ges>8. r8 <bes c ees ges bes>8. <c ees ges>4 |
 }
 
-\celloMusic = \relative c
+celloMusic = \relative c
 {
 	\clef bass
 	\key bes \major
@@ -84,5 +84,6 @@ fluteMusic = \relative c''
 
 \paper
 {
-	left-margin = 15
+	indent = 1.75\cm
+	short-indent = 0.75\cm
 }
