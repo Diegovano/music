@@ -1,0 +1,12 @@
+# -*-compilation-*-
+Processing `C:/Users/Diego/Desktop/LilyPond/Sonata in C Minor.ly'
+Parsing...
+C:/Users/Diego/Desktop/LilyPond/Sonata in C Minor.ly:8:1: error: unknown escaped string: `\pianoUpper'
+
+\pianoUpper = \relative c''
+C:/Users/Diego/Desktop/LilyPond/Sonata in C Minor.ly:16:1: error: unknown escaped string: `\pianoLower'
+
+\pianoLower = \relative c
+Interpreting music...
+MIDI output to `/Users/Diego/Desktop/LilyPond/Sonata in C Minor.mid'...
+fatal error: failed files: "C:\\Users\\Diego\\Desktop\\LilyPond\\Sonata in C Minor.ly"
