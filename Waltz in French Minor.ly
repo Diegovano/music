@@ -10,8 +10,8 @@ upper = \relative c''' {
 	\key aes \major
 	\time 3/4
 	\tempo 4 = 120
-	aes4 ees c | aes c8 ees r4 |
-	ees c aes | ees aes8 c aes4 |
+	aes4( ees c | aes c8 ees) r4 |
+	ees( c aes | ees aes8 c aes4) |
 	a8 bes b c des d | ees e f ges g aes |
 	<aes c, ees aes,>2 <ees, aes c>4~ | <ees aes c>4 r2 |
 	r2 r4 | r2 r4 | aes8 g f a c ees | ees, des c e g bes |
@@ -36,7 +36,9 @@ upper = \relative c''' {
 	f'4. f4 r8 | f8 f r4 c8 c\ottava #0 | r2. | f,4 f2 | c4 c2 f8 ees des c c bes |
 	aes f bes aes g c, | f2. | r2. | r2. | r2. | r2. | c4 ees g | c ees g |
 	aes4 ees c | aes c8 ees r4 | ees c aes | ees aes8 c aes4 | a8 bes b c des d | ees e f ges g aes |
-	<aes c, ees aes,>2 <ees, aes c>4~ | <ees aes c>4 r2 | r2. | r2. |
+	<aes c, ees aes,>2 <ees, aes c>4~ | <ees aes c>4 r2 | r2. | r2. | aes'2. | ees2 des8 c |
+	aes2. | aes4 c2 | bes4 des2 | ees4 bes aes | aes c2 | bes4 des2 | ees8 ees ees16 des c bes aes4 |
+	g-. aes2 | ees'8 des c ees4 r8 | bes aes g bes4 r8 | g f ees ees4. | <aes ees'>4 <ees aes c>2 | r2.
 }
 
 lower = \relative c {
@@ -61,7 +63,10 @@ lower = \relative c {
 	ees <g c,> <f c> | r2. | <f,, f'>2 r4 | r4 <f f'>4 <f f'> | r2 <f f'>4~ | <f f'>2. | r2. | r2. | r2. |
 	r2. | r2. | f''2 <c e>4 | r4 <bes des f>4. c8 | <aes c f>4 <c f> <c f> | <c g'> <a c f>2 |
 	<c f>4 <c f>2 | <c f>4 <c f>2 | c4 ees g | r2. | r2. | r2. | r2. | r2. | r2. | r2. | r2. | r2. | r2. |
-	aes,4 <c ees> <c ees> | aes <c ees> <c ees> |
+	aes,4 <c ees> <c ees> | aes <c ees> <c ees> | aes <c ees> <c ees> | aes <c ees> <c ees> |
+	aes <c ees> <c ees> | aes <c ees> <c ees> | bes <des f> <des f> | bes <ees g> <ees aes> |
+	aes, <ees' aes> <ees aes> | bes <des bes'> <des bes'> | bes <ees des'> <ees aes> | <ees g>-. <ees aes>2 |
+	bes4 ees g | g, bes ees | c ees8 g4. | <aes, aes'>4 <aes ees' aes>2 | \ottava #-1 aes,2. \ottava #0 \bar "|."
 }
 
 \score {
