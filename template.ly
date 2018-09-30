@@ -34,3 +34,8 @@ lower = \relative c
 	}
 	\midi { }
 }
+
+\paper
+{
+	top-margin = 10
+}
