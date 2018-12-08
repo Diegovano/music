@@ -13,7 +13,12 @@ violin = \relative c''
 	\partial 4
 	
 	r4 | r1 | f1 | f16 d c f, f8 a bes4. f'8 |
-	f16 d c f, f8 a bes4. f'8 | r2.
+	f16 d c f, f8 a bes4. f'8 |
+	f2. ees8 d | c a c4 b2 | ees8 c a4 bes2 | bes1 | \key bes \minor bes8 des c ees a, f' a, ees' |
+	f2 f | f8 bes ges c f, a f a | ges des e c f c aes f | r1 |
+	 r1 | f8 f f f g bes c c | f f f f c c aes4 | 
+	
+	 r2.
 }
 
 cello = \relative c
@@ -23,8 +28,13 @@ cello = \relative c
 	\time 4/4 \numericTimeSignature
 	\partial 4
 	
-	r4 | d4 d bes' f | bes, d bes' f | f a bes bes, |
-	f' a bes bes, |	r2.
+	r4 | d4 d bes' f | bes, d bes' f | f a bes bes, | f' a bes bes, |
+	bes c f ees | ees b d f | c f d8( bes4.) | bes1 |
+	\key bes \minor des4 c aes f' | f2( bes) | f4 bes f ges | aes e aes, aes8 aes | \tuplet 3/2 {f aes c } f8 f f16 des8. des16 c8. |
+	\tuplet 3/2 {f,8 aes c} f8 f f16 c8. c16 f,8. | \tuplet 3/2 {f8 aes c} f8 f f16 des8. des16 c8. | \tuplet 3/2 {f,8 aes c} f8 f f16 c8. c16 f,8. |
+	
+	
+	 r2.
 }
 
 upper = \relative c''
