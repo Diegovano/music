@@ -19,7 +19,12 @@ violin = \relative c''
 	 r1 | f8 f f f g bes c c | f f f f c c aes4 | 
 	 \tuplet 3/2 {f8 aes c} f8 f f16 des8. des16 c8. | \tuplet 3/2 {f,8 aes c} f8 f f16 c8. c16 f,8. | r1 | r |
 	 r | r | r | r | r |
-	 r | r |
+	 r | r | c'2 r | f,8\<\p aes g bes f c'\f g16\pp g8. | ges16\p ges8. a4\< f'4.\f\> c8\! |
+	 bes2\p c8 ges' c,4 | c8 ges' c,4 c8 ges' c,4 | f8 f f16 ees des c bes8 c c16 bes aes g | f8 g g16 f ees d c8 d d16 ees fis g |
+	 g4 a8 c d4 ees | ees8 a, f2 r4 | \key bes \major r1 | f'1 | f16 d c f, f8 a bes4. f'8 |
+	 f16 d c f, f8 a bes4. f'8 | f2 f16 ees a, c c4 | f16 ees d c a4 c8 ees ees4 | ees16 d bes bes ees,4 f8 g a4 |
+	 f16 a c a f' c f8 d2 |
+	 
 	 
 	 r2.
 }
@@ -37,7 +42,12 @@ cello = \relative c
 	 \tuplet 3/2 {f,8 aes c} f8 f f16 c8. c16 f,8. | \tuplet 3/2 {f8 aes c} f8 f f16  des8. des16 c8. | \tuplet 3/2 {f,8 aes c} f8 f f16 c8. c16 f,8. |
 	 r1 | f'8 f f f e e c4 | bes2 c8 g' c,4 | c8 g' c,4 c8 g' c,4 |
 	 e8 des c16 des e f g8 g \acciaccatura g8 f4 | \acciaccatura aes8 g4 g8 d b2 | c c8 g' c,4 | d8 aes' d,4 d8 aes' d,4 | g8 f d16 c b aes d8 d \acciaccatura des8 c4 |
-	 c2 g8 f'4 b,8 | c4 des bes16 c e g( f4) | f,2 r |
+	 c2 g8 f'4 b,8 | c4 des bes16 c e g( f4) | f,2 r | r1 | r |
+	 r | r | f'4 r des8 f r4 | c8 ees r d16 r g8 d r a16 r |
+	 g'4 ees d bes | f' r2. | \key bes \major  d4 d bes' f | bes, d bes' f | f a bes bes, |
+	 d a' bes bes, |
+	 bes8 f' d f a f a, f' | d f ees c ees c g' c, | g ees' ees g, d' c ees c |
+	 ees c f, a bes2 |
 	
 	
 	 r2.
@@ -53,7 +63,9 @@ upper = \relative c''
 	
 	 f,4 | bes2 f'4 d4 | bes2 f'4 d | a4. c8 d2 | a4. c8 d2 |
 	 bes2 a4 g | c2 f,4 aes | c2 f,8( bes4.) | <f bes d>2 r | \key bes \minor r1 |
-	 <des f bes>2( <f bes des>) | r1 | r | r | r | r | r |
+	 <des f bes>2( <f bes des>) | r1 | r | r | r | r | r | r | r | r | r | r | r | r |
+	 r | r | r | r | r | r | r | r | r | r | r |
+	 r | r2. f4 | \key bes \major bes2 f'4 d4 |
 	
 	
 	r2. 
@@ -69,7 +81,9 @@ lower = \relative c
 	 r4 | bes4 <f' bes>8 <f bes>8 bes,4 <f' bes>8 <f bes>8 | bes,4 <f' bes>8 <f bes>8 bes,4 <f' bes>8 <f bes>8 | c4 <f a>8 <f a>8 bes,4 <f' bes>8 <f bes>8 |
 	 c4 <f a>8 <f a>8 bes,4 <f' bes>8 <f bes>8 |
 	 bes,4 <c g' c>8 <c g' c> c4 <g' bes ees>8 <g bes ees>8 | ees4 <c' f>8 <c f>8 aes4 <d f>8 <d f> | c,4 <g' c ees>8 <g c ees> bes,8( <f' d' f>4.) | <f d' f>2 r | \key bes \minor f4 r8 ges a2 |
-	 <f, des' f>2( <bes f' bes>) | r1 | r | r | r | r | r |
+	 <f, des' f>2( <bes f' bes>) | r1 | r | r | r | r | r | r | r | r | r | r | r | r |
+	 r | r | r | r | r | r | r | r | r | r | r | r | r |
+	 \key bes \major bes4 <f' bes>8 <f bes>8 bes,4 <f' bes>8 <f bes>8 |
 	
 	
 	
