@@ -20,11 +20,11 @@ violin = \relative c''
 	 r1 | f8 f f f g bes c c | f f f f c c aes4 | 
 	 \tuplet 3/2 {f8 aes c} f8 f f16 des8. des16 c8. | \tuplet 3/2 {f,8 aes c} f8 f f16 c8. c16 f,8. | r1 | r |
 	 r | r | r | r | r |
-	 r | r | r | f8\<\p aes g bes f c'\f g16\pp g8. | ges16\p ges8. a4\< f'4.\f\> c8\! |
-	 bes2\p c8 ges' c,4 | c8 ges' c,4 c8 ges' c,4 | f8 f f16 ees des c bes8 c c16 bes aes g | f8 g g16 f ees d c8 d d16 ees fis g |
+	 r | r | r | f8 aes g bes f c' g16\pp g8. | ges16\p ges8. a4 f4. c'8 |
+	 bes2 c8 ges' c,4 | c8 ges' c,4 c8 ges' c,4 | f8 f f16 ees des c bes8 c c16 bes aes g | f8 g g16 f ees d c8 d d16 ees fis g |
 	 g4 a8 c d4 ees | ees8 a, f2 r4 | \key bes \major r1 | f'1 | f16 d c f, f8 a bes4. f'8 |
 	 f16 d c f, f8 a bes4. f'8 | \repeat volta 2 { f2 f16 ees a, c c4 | f16 ees d c a4 c8 ees ees4 | ees16 d bes bes ees,4 f8 g a4 | }
-	 \alternative { { f16 a c a f' c f8 d2 | } { g,16 a bes g e c' e8 bes2 | } }
+	 \alternative { { f16 a c a f' c f8 d2 | } { g,16 a bes g f c' r8 r2 | } } r1 |
 	 
 	 
 	 
@@ -47,10 +47,10 @@ cello = \relative c
 	 c2 g8 f'4 b,8 | c4 des bes16 c e g( f4) | f,2 r | r1 | r |
 	 r | r | f'4 r des8 f r4 | c8 ees r d16 r g8 d r a16 r |
 	 g'4 ees d bes | f' r2. | \key bes \major  d4 d bes' f | bes, d bes' f | f a bes bes, |
-	 d a' bes bes, |
-	 bes8 f' d f a f a, f' | d f ees c ees c g' c, | g ees' ees g, d' c ees c |
-	 ees c f, a bes2 |
-	
+	 f' a bes bes, |
+	 \repeat volta 2 { bes8 f' d f a f a, f' | d f ees c ees c g' c, | g ees' ees g, d' c f c | }
+	 \alternative { { ees c f, a bes2 | } { bes8 d f4 r2 | } } r1 |
+	 
 	
 	 r2.
 }
@@ -69,7 +69,7 @@ upper = \relative c''
 	 r | r | r | r | r | r | r | r | r | r | r |
 	 r | r2. f4 | \key bes \major bes2 f'4 d4 | bes2 f'4 d a4. c8 d2 |
 	 a4. c8 d2 | \repeat volta 2 { f2 c4 a | bes2 c4 a | bes2 r4 f | }
-	 \alternative { { a4 c4 bes2 | } {  } }
+	 \alternative { { a4 c4 bes2 | } { <g d'>4\mp <f c'> << { e2( } { < f bes>2~ } >> } } << { d2) } { <f bes>2\pp } >> r |
 	
 	
 	r2. 
@@ -89,7 +89,7 @@ lower = \relative c
 	 r | r | r | r | r | r | r | r | r | r | r | r | r |
 	 \key bes \major bes4 <f' bes>8 <f bes>8 bes,4 <f' bes>8 <f bes>8 | bes,4 <f' bes>8 <f bes> bes,4 <f' bes>8 <f bes> | c4 <f a>8 <f a> bes,4 <f' bes>8 <f bes> |
 	 c4 <f a>8 <f a> bes,4 <f' bes>8 <f bes>8 | \repeat volta 2 { f,4 <bes f'>8 <bes f'> f4 <c' a'>8 <c a'> | bes4 <d bes'>8 <d bes'> r4 <c g' c>4 | <bes g' bes>2.( <c f c'>4) | }
-	 \alternative { { <c f c'>2( <bes d bes'>) | } {  } }
+	 \alternative { { <c f c'>2( <bes d bes'>) | } { <bes g' bes>4 <c a'> <bes d f bes>2~ | } } <bes d f bes>2 r |
 	
 	
 	
@@ -121,6 +121,31 @@ lower = \relative c
 	>>
 	\layout {
 	}
+}
+
+\score {
+	\unfoldRepeats
+	<<
+		\set Score.proportionalNotationDuration = #(ly:make-moment 1/12)
+		\new Staff = "violin" \with {
+		instrumentName = #"Violin"
+		midiInstrument = "violin"
+		}
+		\violin
+		
+		\new Staff = "cello" \with {
+		instrumentName = #"Cello"
+		midiInstrument = "cello"
+		}
+		\cello
+		\new PianoStaff \with {
+		instrumentName = #"Piano"
+		}
+		<<
+		\new Staff = "upper" \upper
+		\new Staff = "lower" \lower
+		>>
+	>>
 	\midi { }
 }
 
