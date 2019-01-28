@@ -24,7 +24,8 @@ violin = \relative c''
 	 bes2 c8 ges' c,4 | c8 ges' c,4 c8 ges' c,4 | f8 f f16 ees des c bes8 c c16 bes aes g | f8 g g16 f ees d c8 d d16 ees fis g |
 	 g4 a8 c d4 ees | ees8 a, f2 r4 | \key bes \major r1 | f'1 | f16 d c f, f8 a bes4. f'8 |
 	 f16 d c f, f8 a bes4. f'8 | \repeat volta 2 { f2 f16 ees a, c c4 | f16 ees d c a4 c8 ees ees4 | ees16 d bes bes ees,4 f8 g a4 | }
-	 \alternative { { f16 a c a f' c f8 d2 | } { g,16 a bes g f c' r8 r2 | } } r1 |
+	 \alternative { { f16 a c a f' c f8 d2 | } { g,16 a bes g f c' r8 r2 | } } r1 | r |
+	 r | bes2\pp bes4.. a16 | c4.. e16 bes2 |
 	 
 	 
 	 
@@ -49,7 +50,8 @@ cello = \relative c
 	 g'4 ees d bes | f' r2. | \key bes \major  d4 d bes' f | bes, d bes' f | f a bes bes, |
 	 f' a bes bes, |
 	 \repeat volta 2 { bes8 f' d f a f a, f' | d f ees c ees c g' c, | g ees' ees g, d' c f c | }
-	 \alternative { { ees c f, a bes2 | } { bes8 d f4 r2 | } } r1 |
+	 \alternative { { ees c f, a bes2 | } { bes8 d f4 r2 | } } r1 | r |
+	 r | r | r |
 	 
 	
 	 r2.
@@ -69,7 +71,9 @@ upper = \relative c''
 	 r | r | r | r | r | r | r | r | r | r | r |
 	 r | r2. f4 | \key bes \major bes2 f'4 d4 | bes2 f'4 d a4. c8 d2 |
 	 a4. c8 d2 | \repeat volta 2 { f2 c4 a | bes2 c4 a | bes2 r4 f | }
-	 \alternative { { a4 c4 bes2 | } { <g d'>4\mp <f c'> << { e2( } { < f bes>2~ } >> } } << { d2) } { <f bes>2\pp } >> r |
+	 \alternative { { a4 c4 bes2 | } { <g d'>4\mp <f c'> << { e2( } { < f bes>2~ } >> } } << { d2) } { <f bes>2\pp } >> r |  r4\mf\< d16-"legatiss." f bes d\> bes f d bes r4
+	 | r4\< d16 f bes d\> bes f d bes r4 | r4\! d16-"simile" f bes d bes f d bes r4 |
+	 r4 c16 a' c c bes f d bes r4 |
 	
 	
 	r2. 
@@ -89,7 +93,9 @@ lower = \relative c
 	 r | r | r | r | r | r | r | r | r | r | r | r | r |
 	 \key bes \major bes4 <f' bes>8 <f bes>8 bes,4 <f' bes>8 <f bes>8 | bes,4 <f' bes>8 <f bes> bes,4 <f' bes>8 <f bes> | c4 <f a>8 <f a> bes,4 <f' bes>8 <f bes> |
 	 c4 <f a>8 <f a> bes,4 <f' bes>8 <f bes>8 | \repeat volta 2 { f,4 <bes f'>8 <bes f'> f4 <c' a'>8 <c a'> | bes4 <d bes'>8 <d bes'> r4 <c g' c>4 | <bes g' bes>2.( <c f c'>4) | }
-	 \alternative { { <c f c'>2( <bes d bes'>) | } { <bes g' bes>4 <c a'> <bes d f bes>2~ | } } <bes d f bes>2 r |
+	 \alternative { { <c f c'>2( <bes d bes'>) | } { <bes g' bes>4 <c a'> <bes d f bes>2~ | } } <bes d f bes>2 r | bes,8 bes'16 f' r2 f16 d bes f |
+	 bes,8 bes'16 f' r2 f16 d bes f | bes,8 bes'16 f' r2 f16 d bes f |
+	 c8 a'16 a' r2 f16 d bes f |
 	
 	
 	
@@ -100,18 +106,22 @@ lower = \relative c
 {
 	<<
 		\set Score.proportionalNotationDuration = #(ly:make-moment 1/12)
+		
 		\new Staff = "violin" \with {
+		\override DynamicText #'X-extent = #'(0 . 2)
 		instrumentName = #"Violin"
 		midiInstrument = "violin"
 		}
 		\violin
 		
 		\new Staff = "cello" \with {
+		\override DynamicText #'X-extent = #'(0 . 2)
 		instrumentName = #"Cello"
 		midiInstrument = "cello"
 		}
 		\cello
 		\new PianoStaff \with {
+		\override DynamicText #'X-extent = #'(0 . 2)
 		instrumentName = #"Piano"
 		}
 		<<
