@@ -25,11 +25,14 @@ violin = \relative c''
 	 g4 a8 c d4 ees | ees8 a, f2 r4 | \key bes \major r1 | f'1 | f16 d c f, f8 a bes4. f'8 |
 	 f16 d c f, f8 a bes4. f'8 | \repeat volta 2 { f2 f16 ees a, c c4 | f16 ees d c a4 c8 ees ees4 | ees16 d bes bes ees,4 f8 g a4 | }
 	 \alternative { { f16 a c a f' c f8 d2 | } { g,16 a bes g f c' r8 r2 | } } r1 | r |
-	 r | bes2\pp bes4.. a16 | c4.. e16 bes2 |
-	 
-	 
-	 
-	 r2.
+	 r | bes2\pp bes4.. a16 | c4.. e16 bes2 | c4. g16 g a8 g4. | bes4.. e16 bes2 |
+	 bes4.. e16 bes2 | bes4. g8 f'4. a,8 |
+	 bes2 g4 e | e( f4. g8 a4) |
+	 bes2\mp bes4.. a16 | c2~ c4. bes8\pp |
+	 c4.\mp g16 g a8 g4. | c2~ c4. bes8\pp |
+	 bes2 g4 e | ees( f4. g8 a4~) | a2 r2 |
+	 r1 | f' | f16 d c f, f8 a bes4. f'8 | f16 d c f, f8 a bes4. f'8 |
+	 f2. ees8 d | c a c4 b2 | ees8 c a4 bes2 \bar "|."
 }
 
 cello = \relative c
@@ -51,10 +54,12 @@ cello = \relative c
 	 f' a bes bes, |
 	 \repeat volta 2 { bes8 f' d f a f a, f' | d f ees c ees c g' c, | g ees' ees g, d' c f c | }
 	 \alternative { { ees c f, a bes2 | } { bes8 d f4 r2 | } } r1 | r |
-	 r | r | r |
-	 
-	
-	 r2.
+	 r | r | r | r | r | r | bes,2 c2 | bes r4 g | a4( a2 f4) |
+	 d2 f4.. g16 | r2 r4 g8 f |
+	 g2 c8 bes4. | r2 r4 g8 f |
+	 bes2 r4 g4 | a4( a2 f4~) | f2 r2 |
+	 d'4 d bes' f | d d bes' f | f a bes bes, | f' a bes bes, |
+	 bes c a' ees | c a f d | ees g8 ees d8( bes'4.) \bar "|."
 }
 
 upper = \relative c''
@@ -73,10 +78,13 @@ upper = \relative c''
 	 a4. c8 d2 | \repeat volta 2 { f2 c4 a | bes2 c4 a | bes2 r4 f | }
 	 \alternative { { a4 c4 bes2 | } { <g d'>4\mp <f c'> << { e2( } { < f bes>2~ } >> } } << { d2) } { <f bes>2\pp } >> r |  r4\mf\< d16-"legatiss." f bes d\> bes f d bes r4
 	 | r4\< d16 f bes d\> bes f d bes r4 | r4\! d16-"simile" f bes d bes f d bes r4 |
-	 r4 c16 a' c c bes f d bes r4 |
-	
-	
-	r2. 
+	 r4 c16 a' c c bes f d bes r4 | r4 e16 g c e f c g d r4 | r4 d16 f bes f' bes, f d bes r4 | r4 d16 f bes f' bes, f d bes r4 | r4 d16 f bes g' f c f, c r4 |
+	 r4 d16 f bes d e bes g e r4 | r4\mf\> c8( a') c( e~) e4\! |
+	 r4\mp d,16 f bes d c f, d bes r4 | r4 c16 a' c e d bes f bes, r4 | 
+	 r4 e16 g c e f c g d r4 | r4 c16 a' c e d bes f bes, r4 |
+	 r4 d16 f bes d e bes g e r4 | r4\mf\> c8( a') c( ees~) ees4~\! | ees2 r4 f, |
+	 bes2 f'4 d4 | bes2 f'4 d | a4. c8 d2 | a4. c8 d2 |
+	 bes2 a4 g | ees4. aes8 f2 | a4 ees4 bes8(  <f' bes>4.) \bar "|."
 }
 
 lower = \relative c
@@ -95,11 +103,14 @@ lower = \relative c
 	 c4 <f a>8 <f a> bes,4 <f' bes>8 <f bes>8 | \repeat volta 2 { f,4 <bes f'>8 <bes f'> f4 <c' a'>8 <c a'> | bes4 <d bes'>8 <d bes'> r4 <c g' c>4 | <bes g' bes>2.( <c f c'>4) | }
 	 \alternative { { <c f c'>2( <bes d bes'>) | } { <bes g' bes>4 <c a'> <bes d f bes>2~ | } } <bes d f bes>2 r | bes,8 bes'16 f' r2 f16 d bes f |
 	 bes,8 bes'16 f' r2 f16 d bes f | bes,8 bes'16 f' r2 f16 d bes f |
-	 c8 a'16 a' r2 f16 d bes f |
-	
-	
-	
-	r2. 
+	 c8 a'16 a' r2 f16 d bes f | g8 e'16 c' r2 bes16 d, g, d | bes8 bes'16 bes' r2 f16 d bes f |
+	 bes,8 bes'16 bes' r2 f16 d g, f | bes,8 bes'16 bes' r2 f16 c a f |
+	 bes,8 bes'16 bes' r2 bes16 e, g, bes, | e8( a16 f') r2. |
+	 bes,,8 bes'16 f' r2 f16 d bes f | a8 e'16 a r2 f16^\> d d^\pp bes |
+	 g8 e'16 c' r2 bes16 d, g, d | a'8 e'16 a r2 f16^\> d d^\pp bes | 
+	 b,8 a'16 a' r2 bes16 e, g, b, | ees8( a16 f') r2. | r1 |
+	| bes,4 <f' bes>8 <f bes>8 bes,4 <f' bes>8 <f bes>8 | bes,4 <f' bes>8 <f bes>8 bes,4 <f' bes>8 <f bes>8 | c4 <f a>8 <f a>8 bes,4 <f' bes>8 <f bes>8 | c4 <f a>8 <f a>8 bes,2 |
+	 bes4 <c g' c>8 <c g' c> c4 <g' bes ees>8 <g bes ees> | <a, c c'>2 <f bes f'>2 | <c' a'>4 <c, ees'> d'8( <bes bes,>4.) \bar "|."
 }
 
 \score
