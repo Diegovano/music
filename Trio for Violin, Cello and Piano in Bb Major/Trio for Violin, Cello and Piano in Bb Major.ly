@@ -1,6 +1,6 @@
 \version "2.18.2"
 \header {
-	title = "Concerto for Violin and Cello"
+	title = "Trio for Violin, Cello and Piano"
 	subtitle = "in B flat Major"
 	tagline = ""
 	composer = "D Van Overberghe"
