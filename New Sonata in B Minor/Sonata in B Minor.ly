@@ -8,6 +8,10 @@
 	composer = "D Van Overberghe"
 }
 
+\paper {
+	bottom-margin = 10
+}
+
 flute = \relative c''
 {
 	\clef treble
