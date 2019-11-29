@@ -36,88 +36,66 @@
 	evenFooterMarkup = \oddFooterMarkup
 }
 
+flute = \relative c''
+{
+	%\set Score.proportionalNotationDuration = #(ly:make-moment 1/8)
+	%\override Score.SpacingSpanner.strict-note-spacing = ##t
+	\clef treble
+	\key e \major
+	\time 4/4 \numericTimeSignature
+	gis4 a gis fis | gis2 a | dis e | 
+	
+}
+
 oboe = \relative c'
 {
 	\clef treble
 	\key e \major
 	\time 4/4 \numericTimeSignature
-	r8 | e'2( b) | gis( fis) | cis8 cis4. a'8 a4. | cis2( e,) | a8 b,16 cis b4 cis2 | dis8 dis4. b'8 b4. |
-	r1 | gis2 e'4 e16 dis e dis | e8 dis cis4 dis8 cis b4 |
+	e4 cis e fis | e2 cis | b b |
 }
 
-upper = \relative c'
+violin = \relative c''
 {
 	\clef treble
 	\key e \major
 	\time 4/4 \numericTimeSignature
+	\tempo 4 = 120
+	e8 b~ b4 b8 e~ e4 | e,8 gis b r cis a fis r | dis fis b r e b gis4 | 
 }
 
-lower = \relative c'
+cello = \relative c,
 {
 	\clef bass
 	\key e \major
 	\time 4/4 \numericTimeSignature
-}
-
-fviolin = \relative c'
-{
-	\clef treble
-	\key e \major
-	\time 4/4 \numericTimeSignature
-	\tempo 4 = 60
-	\partial 8
-	e'8 | e4. b8 b gis-. gis e-. | e2 r4 r8 fis8 | fis4. a8-. a cis-. cis fis | fis2
-}
-
-sviolin = \relative c'
-{
-	\clef treble
-	\key e \major
-	\time 4/4 \numericTimeSignature
-	gis'8 | e16 fis gis a gis8 gis r2 | b16 a gis fis e8 e gis16 cis b dis cis8 cis | a16 b cis dis cis8 cis r2 | a16 b cis dis a8 a r2 | a16 gis e dis cis8 cis e16 fis a b cis8 dis | b16 cis dis e dis8 dis r2 | 
-}
-
-cello = \relative c'
-{
-	\clef bass
-	\key e \major
-	\time 4/4 \numericTimeSignature
-
+	e8 b' r4 e8 b r4 | e,8 b' gis e' a, cis a e' | fis, dis' b fis' a4 r |
 }
 
 \score
 {
 	<<
+		\new Staff = "flute" \with {
+			instrumentName = #"Flute"
+			midiInstrument = "flute"
+		}
+		\flute
+		
 		\new Staff = "oboe" \with {
-		instrumentName = #"Hautbois"
-		midiInstrument = "oboe"
+			instrumentName = #"Hautbois"
+			midiInstrument = "oboe"
 		}
 		\oboe
-	
-		\new PianoStaff \with {
-		instrumentName = #"Piano"
+			
+		\new Staff = "violin" \with {
+			instrumentName = #"Violon"
+			midiInstrument = "violin"
 		}
-		<<
-			\set Score.proportionalNotationDuration = #(ly:make-moment 1/12)
-			\new Staff = "upper" \upper
-			\new Staff = "lower" \lower
-		>>
-		
-		\new Staff = "violin1" \with {
-		instrumentName = #"Premiers Violons"
-		midiInstrument = "violin"
-		}
-		\fviolin
-		
-		\new Staff = "violin2" \with {
-		instrumentName = #"Seconds Violons"
-		midiInstrument = "violin"
-		}
-		\sviolin
+		\violin
 		
 		\new Staff = "cello" \with {
-		instrumentName = #"Violoncelle"
-		midiInstrument = "cello"
+			instrumentName = #"Violoncelle"
+			midiInstrument = "cello"
 		}
 		\cello
 		
@@ -134,36 +112,27 @@ cello = \relative c'
 {
 	\unfoldRepeats \articulate
 	<<
+		\new Staff = "flute" \with {
+			instrumentName = #"Flute"
+			midiInstrument = "flute"
+		}
+		\flute
+		
 		\new Staff = "oboe" \with {
-		instrumentName = #"Oboe"
-		midiInstrument = "oboe"
+			instrumentName = #"Oboe"
+			midiInstrument = "oboe"
 		}
 		\oboe
-	
-		\new PianoStaff \with {
-		instrumentName = #"Piano"
-		}
-		<<
-			%\set Score.proportionalNotationDuration = #(ly:make-moment 1/12)
-			\new Staff = "upper" \upper
-			\new Staff = "lower" \lower
-		>>
 		
-		\new Staff = "violin1" \with {
-		instrumentName = #"First Violin"
-		midiInstrument = "violin"
+		\new Staff = "violin" \with {
+			instrumentName = #"First Violin"
+			midiInstrument = "violin"
 		}
-		\fviolin
-		
-		\new Staff = "violin2" \with {
-		instrumentName = #"Second Violin"
-		midiInstrument = "violin"
-		}
-		\sviolin
+		\violin
 		
 		\new Staff = "cello" \with {
-		instrumentName = #"Cello"
-		midiInstrument = "cello"
+			instrumentName = #"Cello"
+			midiInstrument = "cello"
 		}
 		\cello
 		
