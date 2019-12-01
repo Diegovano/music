@@ -55,13 +55,29 @@ oboe = \relative c'
 	e4 cis e fis | e2 cis | b b |
 }
 
-violin = \relative c''
+fviolin = \relative c''
 {
 	\clef treble
 	\key e \major
 	\time 4/4 \numericTimeSignature
 	\tempo 4 = 120
 	e8 b~ b4 b8 e~ e4 | e,8 gis b r cis a fis r | dis fis b r e b gis4 | 
+}
+
+sviolin = \relative c''
+{
+	\clef treble
+	\key e \major
+	\time 4/4 \numericTimeSignature
+	c1 %placeholder note to get staff
+}
+
+viola = \relative c
+{
+	\clef alto
+	\key e \major
+	\time 4/4 \numericTimeSignature
+	c1 %placeholder note to get staff
 }
 
 cello = \relative c,
@@ -74,6 +90,7 @@ cello = \relative c,
 
 \score
 {
+	\new StaffGroup
 	<<
 		\new Staff = "flute" \with {
 			instrumentName = #"Flute"
@@ -86,12 +103,27 @@ cello = \relative c,
 			midiInstrument = "oboe"
 		}
 		\oboe
+		
+		\new GrandStaff
+		<<
+			\new Staff = "fviolin" \with {
+				instrumentName = #"Violon I"
+				midiInstrument = "violin"
+			}
+			\fviolin
 			
-		\new Staff = "violin" \with {
-			instrumentName = #"Violon"
-			midiInstrument = "violin"
+			\new Staff = "sviolin" \with {
+				instrumentName = #"Violon II"
+				midiInstrument = "violin"
+			}
+			\sviolin
+		>>
+		
+		\new Staff = "viola" \with {
+			instrumentName = #"Viole"
+			midiInstrument = "viola"
 		}
-		\violin
+		\viola
 		
 		\new Staff = "cello" \with {
 			instrumentName = #"Violoncelle"
@@ -111,6 +143,7 @@ cello = \relative c,
 \score
 {
 	\unfoldRepeats \articulate
+	\new StaffGroup
 	<<
 		\new Staff = "flute" \with {
 			instrumentName = #"Flute"
@@ -119,19 +152,34 @@ cello = \relative c,
 		\flute
 		
 		\new Staff = "oboe" \with {
-			instrumentName = #"Oboe"
+			instrumentName = #"Hautbois"
 			midiInstrument = "oboe"
 		}
 		\oboe
 		
-		\new Staff = "violin" \with {
-			instrumentName = #"First Violin"
-			midiInstrument = "violin"
+		\new GrandStaff
+		<<
+			\new Staff = "fviolin" \with {
+				instrumentName = #"Violon I"
+				midiInstrument = "violin"
+			}
+			\fviolin
+			
+			\new Staff = "sviolin" \with {
+				instrumentName = #"Violon II"
+				midiInstrument = "violin"
+			}
+			\sviolin
+		>>
+		
+		\new Staff = "viola" \with {
+			instrumentName = #"Viole"
+			midiInstrument = "viola"
 		}
-		\violin
+		\viola
 		
 		\new Staff = "cello" \with {
-			instrumentName = #"Cello"
+			instrumentName = #"Violoncelle"
 			midiInstrument = "cello"
 		}
 		\cello
