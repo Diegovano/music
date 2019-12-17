@@ -43,7 +43,10 @@ flute = \relative c''
 	\clef treble
 	\key e \major
 	\time 4/4 \numericTimeSignature
-	gis4 a gis fis | gis2 a | dis e | 
+	gis4 a gis fis | gis2 a | dis e | r4 e r e | gis,8 b e4 r e |
+	r fis, r a | fis8 a cis4 r fis | e,8 fis gis4 gis8 a b4 |
+	a8 b cis4 dis8 e fis4 | e8 fis e4 fis8 gis a4 | r8 b4. b2 |
+	e,8 dis cis b a2 | fis'8 e dis cis b2 | e8 dis cis b a2 | b8 cis e fis fis2 | r4 e 
 	
 }
 
@@ -69,7 +72,7 @@ sviolin = \relative c''
 	\clef treble
 	\key e \major
 	\time 4/4 \numericTimeSignature
-	c1 %placeholder note to get staff
+	e,2 r | e r | fis2 r |
 }
 
 viola = \relative c
@@ -77,7 +80,7 @@ viola = \relative c
 	\clef alto
 	\key e \major
 	\time 4/4 \numericTimeSignature
-	c1 %placeholder note to get staff
+	gis'8( e' b) r e( gis, b) r | gis( e' cis r e a, cis) r | fis,( dis' b r e gis, b) r |
 }
 
 cello = \relative c,
@@ -85,7 +88,7 @@ cello = \relative c,
 	\clef bass
 	\key e \major
 	\time 4/4 \numericTimeSignature
-	e8 b' r4 e8 b r4 | e,8 b' gis e' a, cis a e' | fis, dis' b fis' a4 r |
+	e8 b' e r gis e b r | e,8 b' gis e' a, cis a e' | fis, dis' b fis' gis e b4 |
 }
 
 \score
