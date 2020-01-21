@@ -36,101 +36,80 @@
 	evenFooterMarkup = \oddFooterMarkup
 }
 
-flute = \relative c''
+oboe = \relative c''
 {
 	%\set Score.proportionalNotationDuration = #(ly:make-moment 1/8)
 	%\override Score.SpacingSpanner.strict-note-spacing = ##t
 	\clef treble
 	\key e \major
-	\time 4/4 \numericTimeSignature
-	gis4 a gis fis | gis2 a | dis e | r4 e r e | gis,8 b e4 r e |
-	r fis, r a | fis8 a cis4 r fis | e,8 fis gis4 gis8 a b4 |
-	a8 b cis4 dis8 e fis4 | e8 fis e4 fis8 gis a4 | r8 b4. b2 |
-	e,8 dis cis b a2 | fis'8 e dis cis b2 | e8 dis cis b a2 | b8 cis e fis fis2 | r4 e 
-	
-}
-
-oboe = \relative c'
-{
-	\clef treble
-	\key e \major
-	\time 4/4 \numericTimeSignature
-	e4 cis e fis | e2 cis | b b |
+	\time 4/4
+	\tempo 4 = 120
+	e2( dis8 e cis b) | r b4.~ b2 | a( gis8 a fis dis) | r e4.~ e2 | 
 }
 
 fviolin = \relative c''
 {
 	\clef treble
 	\key e \major
-	\time 4/4 \numericTimeSignature
-	\tempo 4 = 120
-	e8 b~ b4 b8 e~ e4 | e,8 gis b r cis a fis r | dis fis b r e b gis4 | 
+	\time 4/4
+	b2 r8 a r gis | r gis4.~ gis2 | a2 r8 e r fis | r e4.~ e2 | 
 }
 
 sviolin = \relative c''
 {
 	\clef treble
 	\key e \major
-	\time 4/4 \numericTimeSignature
-	e,2 r | e r | fis2 r |
+	\time 4/4
+	gis2 r8 fis r gis | r gis4.~ gis2 | e2 r8 b r a | r b4.~ b2 | 
 }
 
-viola = \relative c
+viola = \relative c'
 {
 	\clef alto
 	\key e \major
-	\time 4/4 \numericTimeSignature
-	gis'8( e' b) r e( gis, b) r | gis( e' cis r e a, cis) r | fis,( dis' b r e gis, b) r |
+	\time 4/4
+	e2 r4. dis8 | r dis4.~ dis2 | cis2 r4. fis,8 | r gis4.~ gis2 | 
 }
 
-cello = \relative c,
+cello = \relative c
 {
 	\clef bass
 	\key e \major
-	\time 4/4 \numericTimeSignature
-	e8 b' e r gis e b r | e,8 b' gis e' a, cis a e' | fis, dis' b fis' gis e b4 |
+	\time 4/4
+	e2 r4. dis8 | r dis4.~ dis2 | e2 r4. fis,8 | r gis4.~ gis2 | 
 }
 
 \score
 {
 	\new StaffGroup
 	<<
-		\new Staff = "flute" \with {
-			instrumentName = #"Flute"
-			midiInstrument = "flute"
-		}
-		\flute
-		
 		\new Staff = "oboe" \with {
 			instrumentName = #"Hautbois"
-			midiInstrument = "oboe"
 		}
 		\oboe
 		
-		\new GrandStaff
-		<<
-			\new Staff = "fviolin" \with {
-				instrumentName = #"Violon I"
-				midiInstrument = "violin"
-			}
-			\fviolin
-			
-			\new Staff = "sviolin" \with {
-				instrumentName = #"Violon II"
-				midiInstrument = "violin"
-			}
-			\sviolin
-		>>
+		\new Staff = "fviolin" \with {
+			instrumentName = #"Violon I"
+		}
+		\fviolin
+		
+		\new Staff = "sviolin" \with {
+			instrumentName = #"Violon II"
+		}
+		\sviolin
 		
 		\new Staff = "viola" \with {
 			instrumentName = #"Viole"
-			midiInstrument = "viola"
 		}
 		\viola
 		
 		\new Staff = "cello" \with {
-			instrumentName = #"Violoncelle"
-			midiInstrument = "cello"
+			instrumentName = \markup {
+			\center-column {
+				"Violoncelle"
+				\line { "et Contrebasse" }
+				}
+			}
 		}
 		\cello
 		
@@ -148,32 +127,23 @@ cello = \relative c,
 	\unfoldRepeats \articulate
 	\new StaffGroup
 	<<
-		\new Staff = "flute" \with {
-			instrumentName = #"Flute"
-			midiInstrument = "flute"
-		}
-		\flute
-		
 		\new Staff = "oboe" \with {
 			instrumentName = #"Hautbois"
 			midiInstrument = "oboe"
 		}
 		\oboe
 		
-		\new GrandStaff
-		<<
-			\new Staff = "fviolin" \with {
-				instrumentName = #"Violon I"
-				midiInstrument = "violin"
-			}
-			\fviolin
-			
-			\new Staff = "sviolin" \with {
-				instrumentName = #"Violon II"
-				midiInstrument = "violin"
-			}
-			\sviolin
-		>>
+		\new Staff = "fviolin" \with {
+			instrumentName = #"Violon I"
+			midiInstrument = "violin"
+		}
+		\fviolin
+		
+		\new Staff = "sviolin" \with {
+			instrumentName = #"Violon II"
+			midiInstrument = "violin"
+		}
+		\sviolin
 		
 		\new Staff = "viola" \with {
 			instrumentName = #"Viole"
@@ -187,6 +157,13 @@ cello = \relative c,
 		}
 		\cello
 		
+		\new Staff = "doublebass" \with
+		{
+			instrumentName = #"Contrebasse"
+			midiInstrument = "Contrabass"
+			\transposition c
+		}
+		\cello %becuase cello and db parts are the same (8vb)
 	>>
 	\midi { }
 }
