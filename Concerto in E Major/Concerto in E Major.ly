@@ -45,6 +45,7 @@ oboe = \relative c''
 	\time 4/4
 	\tempo 4 = 120
 	e2( dis8 e cis b) | r b4.~ b2 | a( gis8 a fis dis) | r e4.~ e2 | 
+	e2( fis8 gis fis a) | r a4.~ a2 | a2( b8 cis a dis) | r e4.~ e2 |
 }
 
 fviolin = \relative c''
@@ -53,6 +54,7 @@ fviolin = \relative c''
 	\key e \major
 	\time 4/4
 	b2 r8 a r gis | r gis4.~ gis2 | a2 r8 e r fis | r e4.~ e2 | 
+	b2 r8 dis r fis | r fis4.~ fis2 | e2 r8 fis r a | r b4.~ b2 |
 }
 
 sviolin = \relative c''
@@ -61,6 +63,7 @@ sviolin = \relative c''
 	\key e \major
 	\time 4/4
 	gis2 r8 fis r gis | r gis4.~ gis2 | e2 r8 b r a | r b4.~ b2 | 
+	b2 r8 dis r cis | r cis4.~ cis2 | cis2 r8 b r dis | r e4.~ e2 |
 }
 
 viola = \relative c'
@@ -69,6 +72,7 @@ viola = \relative c'
 	\key e \major
 	\time 4/4
 	e2 r4. dis8 | r dis4.~ dis2 | cis2 r4. fis,8 | r gis4.~ gis2 | 
+	gis2 r4. a8 | r a4.~ a2 | a2 r4. b8 | r b4.~ b2 |
 }
 
 cello = \relative c
@@ -77,11 +81,12 @@ cello = \relative c
 	\key e \major
 	\time 4/4
 	e2 r4. dis8 | r dis4.~ dis2 | e2 r4. fis,8 | r gis4.~ gis2 | 
+	gis2 r4. fis8 | r fis4.~ fis2 | a2 r4. b8 | r e4.~ e2 |
 }
 
 \score
 {
-	\new StaffGroup
+	\new StaffGroup \with { \override StaffSymbol.ledger-line-thickness = #'(0.5 . 0.05) }
 	<<
 		\new Staff = "oboe" \with {
 			instrumentName = #"Hautbois"
