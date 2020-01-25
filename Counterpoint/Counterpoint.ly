@@ -26,8 +26,8 @@ lower = \relative c'
 
 \score
 {
-	\new PianoStaff \with {
-	instrumentName = #"Piano"
+	\new ChoirStaff \with { 
+	instrumentName = #"Voice"
 	}
 	<<
 		\set Score.proportionalNotationDuration = #(ly:make-moment 1/10)
@@ -37,6 +37,36 @@ lower = \relative c'
 	\layout {
 	}
 	\midi { }
+}
+
+\score
+{
+	\new ChoirStaff \with {
+	instrumentName = #"Voice"
+	}
+	{
+	<<
+		\new Staff { \repeat unfold 2 { s1 \break } }
+		\new Staff { \repeat unfold 2 { s1 \break } }
+	>>
+	}
+	
+	\layout 
+	{
+	\context
+		{
+		\Staff
+		\remove "Time_signature_engraver"
+		\remove "Clef_engraver"
+		\remove "Bar_engraver"
+		}
+		
+	\context
+		{
+		\Score
+		\remove "Bar_number_engraver"
+		}
+	}
 }
 
 \paper
