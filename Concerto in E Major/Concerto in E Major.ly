@@ -58,7 +58,7 @@ fviolin = \relative c''
 	b2 r8 a r gis | r gis4.~ gis2 | a2 r8 e r fis | r e4.~ e2 | 
 	b2 r8 dis r fis | r fis4.~ fis2 | e2 r8 fis r a | r b4.~ b2 | 
 	b1 | b2 b | d1 | e2 r | 
-	e( f | d gis) | r1 | cis,2( e)
+	e( f | d gis) | r1 | c,2( e)
 }
 
 sviolin = \relative c''
@@ -91,7 +91,7 @@ cello = \relative c
 	e2 r4. dis8 | r dis4.~ dis2 | e2 r4. fis,8 | r gis4.~ gis2 | 
 	gis2 r4. fis8 | r fis4.~ fis2 | a2 r4. b8 | r e4.~ e2 | 
 	gis1 | gis2 e | e1 | e2 r | 
-	e2( fis | gis d) | r1 cis2( e) | 
+	e2( fis | gis d) | r1 c2( e) | 
 }
 
 \score
