@@ -44,10 +44,9 @@ oboe = \relative c''
 	\key e \major
 	\time 4/4
 	\tempo 4 = 120
-	e2( dis8 e cis b) | r b4.~ b2 | a( gis8 a fis dis) | r e4.~ e2 | 
-	e2( fis8 gis fis a) | r a4.~ a2 | a2( b8 cis a dis) | r e4.~ e2 | 
-	gis fis4( e | dis2) e4( fis | gis2) e4 gis | b2( a) | 
-	a2( gis4 a | b c d2) | r4 c b a | a2( gis) | 
+	e4.( dis8 e cis b) r8 | b2 ~ b4 r | a4.( gis8 a fis dis) r | e2 ~ e4 r | 
+	e4.( fis8 gis fis a) r | a2 ~ a4 r | a4.( b8 cis a dis) r | e2 ~ e4 r | 
+
 }
 
 fviolin = \relative c''
@@ -55,10 +54,9 @@ fviolin = \relative c''
 	\clef treble
 	\key e \major
 	\time 4/4
-	b2 r8 a r gis | r gis4.~ gis2 | a2 r8 e r fis | r e4.~ e2 | 
-	b2 r8 dis r fis | r fis4.~ fis2 | e2 r8 fis r a | r b4.~ b2 | 
-	b1 | b2 b | d1 | e2 r | 
-	e( f | d gis) | r1 | c,2( e)
+	b4. r8 a r gis r | gis2 ~ gis4 r | a4. r8 e r fis r | e2 ~ e4 r | 
+	b4. r8 dis r fis r | fis2 ~ fis4 r | e4. r8 fis r a r | b2 ~ b4 r | 
+
 }
 
 sviolin = \relative c''
@@ -66,10 +64,9 @@ sviolin = \relative c''
 	\clef treble
 	\key e \major
 	\time 4/4
-	gis2 r8 fis r gis | r gis4.~ gis2 | e2 r8 b r a | r b4.~ b2 | 
-	b2 r8 dis r cis | r cis4.~ cis2 | cis2 r8 b r dis | r e4.~ e2 |
-	dis1 | gis2 r | gis1 | a2 r | 
-	a( gis | b f) | r1 | e2( gis) | 
+	gis4. r8 fis r gis r | gis2 ~ gis4 r | e4. r8 b r a r | b2 ~ b4 r | 
+	b4. r8 dis r cis r | cis2 ~ cis4 r | cis4. r8 b r dis r | e2 ~ e4 r |
+
 }
 
 viola = \relative c'
@@ -77,10 +74,9 @@ viola = \relative c'
 	\clef alto
 	\key e \major
 	\time 4/4
-	e2 r4. dis8 | r dis4.~ dis2 | cis2 r4. fis,8 | r gis4.~ gis2 | 
-	gis2 r4. a8 | r a4.~ a2 | a2 r4. b8 | r b4.~ b2 | 
-	b1 | b2 r | b1 | cis2 r2 | 
-	c2( d | d gis,) | r1 | a2( b) | 
+	e4. r8 r4 dis8 r | dis2 ~ dis4 r | cis4. r8 r4 fis,8 r | gis2 ~ gis4 r | 
+	gis4. r8 r4 a8 r | a2 ~ a4 r | a4. r8 r4 b8 r | b2 ~ b4 r | 
+
 }
 
 cello = \relative c
@@ -88,15 +84,14 @@ cello = \relative c
 	\clef bass
 	\key e \major
 	\time 4/4
-	e2 r4. dis8 | r dis4.~ dis2 | e2 r4. fis,8 | r gis4.~ gis2 | 
-	gis2 r4. fis8 | r fis4.~ fis2 | a2 r4. b8 | r e4.~ e2 | 
-	gis1 | gis2 e | e1 | e2 r | 
-	e2( fis | gis d) | r1 c2( e) | 
+	e4. r8 r4 dis8 r | dis2 ~ dis4 r | e4. r8 r4 fis,8 r | gis2 ~ gis4 r | 
+	gis4. r8 r4 fis8 r | fis2 ~ fis4 r | a4. r8 r4 b8 r | e2 ~ e4 r | 
+ 
 }
 
 \score
 {
-	\new StaffGroup \with { \override StaffSymbol.ledger-line-thickness = #'(0.5 . 0.05) }
+	\new StaffGroup %\with { \override StaffSymbol.ledger-line-thickness = #'(0.5 . 0.05) }
 	<<
 		\new Staff = "oboe" \with {
 			instrumentName = #"Hautbois"
